@@ -10,23 +10,25 @@
   <body>
     <div id="app" 
     class="min-h-screen flex justify-center items-center bg-slate-300">
-
-      <form id="formtask" class="w-70">
-        <div class="flex">
-          <input type="text" name="task" id="task" placeholder="Enter your task" 
-          class="border-2 rounded-md pl-2 w-full">
-          <button title="Add Task" id="add" class="cursor-pointer text-sky-800 scale-150 ml-1">
-            <i class="fa-solid fa-square-plus"></i>
-          </button>
-        </div>
-      </form>
-      <div class="flex gap-2 mt-1">
-        <input type="checkbox" id="checkbox-task"
-        class="h-5 w-5 self-center">
-        <label for="checkbox-task">Lorem ipsum dolor sit amet consectetur adipisicing.</label>
-        <div class="flex gap-2">
-          <button title="Edit Task" class="cursor-pointer text-green-800"><i class="fa-solid fa-pen-to-square"></i></button>
-          <button title="Remove Task" class="cursor-pointer text-red-800"><i class="fa-solid fa-delete-left"></i></button>
+      <div class="flex flex-col">
+        <form id="formtask" class="w-70">
+          <div class="flex">
+            <input type="text" name="task" id="task" placeholder="Enter your task" 
+            class="border-2 rounded-md pl-2 w-full">
+            <button title="Add Task" id="add" class="cursor-pointer text-sky-800 scale-150 ml-1">
+              <i class="fa-solid fa-square-plus"></i>
+            </button>
+          </div>
+        </form>
+        
+        <div class="flex gap-2 mt-1">
+          <input type="checkbox" id="checkbox"
+          class="h-5 w-5 self-center">
+          <span id="title">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+          <div class="flex gap-2">
+            <button title="Edit Task" class="cursor-pointer text-green-800"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button title="Remove Task" class="cursor-pointer text-red-800"><i class="fa-solid fa-delete-left"></i></button>
+          </div>
         </div>
       </div>
 
