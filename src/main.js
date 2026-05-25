@@ -67,7 +67,7 @@ function renderTask(task){
         <span class="">${task.title}</span>
       </div>
       <div class="flex gap-2">
-        <button title="Remove Task" class="cursor-pointer text-red-800 hover:scale-120"><i class="fa-solid fa-delete-left"></i></button>
+        <button title="Remove Task" class="cursor-pointer text-red-800 hover:scale-120 hover:transition-transform duration-300"><i class="fa-solid fa-delete-left"></i></button>
       </div>
     </div>
   `;
