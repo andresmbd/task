@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/90cf7aff80.js" crossorigin="anonymous"></script>
     <title>tasks</title>
@@ -10,25 +11,32 @@
   <body>
     <div id="app" 
     class="min-h-screen flex justify-center items-center bg-slate-300">
-      <div class="flex flex-col">
-        <form id="formtask" class="w-70">
+      
+      <div class="flex flex-col items-center">
+        <form id="formtask" class="w-full">
           <div class="flex">
-            <input type="text" name="task" id="task" placeholder="Enter your task" 
+            <input type="text"  name="task" id="task" placeholder="Enter your task" 
             class="border-2 rounded-md pl-2 w-full">
-            <button title="Add Task" id="add" class="cursor-pointer text-sky-800 scale-150 ml-1">
+            <button
+            
+            title="Add Task" 
+            id="add" 
+            class="cursor-pointer text-sky-800 scale-150 ml-1 hover:scale-170">
               <i class="fa-solid fa-square-plus"></i>
             </button>
           </div>
         </form>
-        
-        <div class="flex gap-2 mt-1">
-          <input type="checkbox" id="checkbox"
-          class="h-5 w-5 self-center">
-          <span id="title">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-          <div class="flex gap-2">
-            <button title="Edit Task" class="cursor-pointer text-green-800"><i class="fa-solid fa-pen-to-square"></i></button>
-            <button title="Remove Task" class="cursor-pointer text-red-800"><i class="fa-solid fa-delete-left"></i></button>
-          </div>
+        <div class="flex justify-evenly w-full">
+          <button  class="w-30 border p-1 rounded-lg mt-2 shadow-lg hover:shadow-lg/30 mb-2 cursor-pointer bg-sky-950 text-gray-300 hover:bg-neutral-900" id="all">All</button>
+          <button  class="w-30 border p-1 rounded-lg mt-2 shadow-lg hover:shadow-lg/30 mb-2 cursor-pointer bg-sky-950 text-gray-300 hover:bg-neutral-900" id="pending">Pending</button>
+          <button  class="w-30 border p-1 rounded-lg mt-2 shadow-lg hover:shadow-lg/30 mb-2 cursor-pointer bg-sky-950 text-gray-300 hover:bg-neutral-900" id="completed">Completed</button>
+        </div>
+        <div>
+          <input type="text" id="search" placeholder="Search Task..."
+          class="shadow-lg/20 rounded-xl bg-slate-400 pl-4 focus-within:shadow-lg/50 mb-2">
+        </div>
+        <div id="tasklist" class="flex gap-2 mt-1 flex-col">
+
         </div>
       </div>
 
